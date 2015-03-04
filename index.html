@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>css+js+html布局调控</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <style>
+        html,body,p{
+            margin:0;
+            padding:0;
+            color:white;
+        }
+
+        .header{
+
+            width:100%;
+            height:40px;
+            background-color:green;
+            position:absolute;
+            top:0px;
+        }
+        .wrapper {
+            width: 100%;
+            position: absolute;
+            top: 40px;
+            bottom: 50px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        .wrapper-content{
+
+            background-color:blue;
+        }
+
+        .footer {
+             width:100%;
+            position:absolute;
+            bottom:0px;
+            height: 50px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+     <div class="wrapper" id="wrapper">
+            <div  class="wrapper-content">
+                <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>  <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+                   <p>abccccccccccccccccccccccccccccccccc</p>
+            </div>
+      
+     </div>
+     <div class="footer"></div>
+    <script src="iscroll.js"></script>
+    <script>
+
+    //    new iScroll("wrapper");
+    </script>
+</body>
+</html>
